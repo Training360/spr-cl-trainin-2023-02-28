@@ -18,5 +18,5 @@ public interface EmployeeClient {
     List<Role> listRoles();
 
     @PostExchange("/api/employees")
-    void createEmployee(@RequestBody CreateEmployeeCommand command);
+    Employee createEmployee(@RequestBody CreateEmployeeCommand command);
 }
