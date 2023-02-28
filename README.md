@@ -49,3 +49,4 @@ docker run -d -e POSTGRES_DB=course -e POSTGRES_USER=course -e POSTGRES_PASSWORD
 ## bff-service - Backend for frontend GraphQL használatával
 
 * GraphQL bevezetése
+* Grphiql kliens: `http://localhost:8088/graphiql`
