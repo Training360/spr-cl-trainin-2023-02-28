@@ -3,6 +3,7 @@ package frontendservice.service;
 import frontendservice.dto.CreateEmployeeCommand;
 import frontendservice.dto.Employee;
 import frontendservice.dto.Role;
+import frontendservice.employeegateway.EmployeeClient;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -12,8 +13,10 @@ import java.util.List;
 @AllArgsConstructor
 public class EmployeesService {
 
+    private EmployeeClient employeeClient;
+
     public List<Employee> listEmployees() {
-        return null;
+        return employeeClient.listEmployees();
     }
 
     public List<Role> listRoles() {

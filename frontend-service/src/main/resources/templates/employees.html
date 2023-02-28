@@ -21,12 +21,9 @@
     </thead>
     <tbody>
     <tr th:each="employee : ${employees}">
-            <td th:text="${employee.id}"></td>
-            <td th:text="${employee.name}"></td>
-            <td th:text="${employee.role.name}"></td>
-            <td>
-                <!-- <a th:href="@{/calendar-items(employeeId=${employee.id})}">Calendar</a> -->
-            </td>
+            <td th:text="${employee.id}">10</td>
+            <td th:text="${employee.name}">John Doe</td>
+            <td th:text="${employee.role.name}">Senior Java Developer</td>
     </tr>
     </tbody>
 </table>

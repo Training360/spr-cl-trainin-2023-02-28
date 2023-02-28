@@ -61,7 +61,6 @@
 	</dependencies>
 
 	<build>
-		<finalName>employee-service</finalName>
 		<plugins>
 
 			<plugin>
