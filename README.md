@@ -19,3 +19,7 @@ git clone https://github.com/Training360/spr-cl-trainin-2023-02-28
 ```shell
 docker run -d -e POSTGRES_DB=employees -e POSTGRES_USER=employees -e POSTGRES_PASSWORD=employees -p 5432:5432  --name employees-postgres postgres
 ```
+
+* JDK beállítása
+* Alkalmazás indítása az `Application` osztállyal
+* A Swagger elérhető a `http://localhost:8081/swagger-ui` címen
