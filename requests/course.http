@@ -1,0 +1,32 @@
+GET http://localhost:8083/api/courses
+Accept: application/json
+
+###
+
+GET http://localhost:8083/api/courses/1
+Accept: application/json
+
+
+### Create course
+
+POST http://localhost:8083/api/courses
+Content-Type: application/json
+
+{
+  "name": "Advanced Java development",
+  "description": "Learn Java",
+  "syllabus": "Java SE",
+  "limit": 5
+}
+
+### Create course - lorem
+
+POST http://localhost:8083/api/courses
+Content-Type: application/json
+
+{
+  "name": "Very advanced Java development",
+  "description": "Learn Java",
+  "syllabus": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non purus ornare, ullamcorper massa eget, blandit orci. Morbi faucibus, neque eget laoreet pellentesque, sem risus pretium diam, eget varius dui neque eget dolor. Phasellus porta, ipsum vel gravida sodales, nibh ligula sagittis orci, ut interdum augue neque at velit. Pellentesque id lacus vel lacus dapibus lacinia. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque faucibus ligula imperdiet suscipit ornare. Integer in augue at metus cursus pulvinar. Cras sit amet ornare mauris. Sed laoreet turpis vel vestibulum molestie. Maecenas ut malesuada nulla.  Ut ex mauris, volutpat vel consectetur id, pretium ac lorem. Cras at condimentum tellus. Sed iaculis tempor malesuada. Proin quis ligula a lacus fringilla varius a et mauris. Curabitur porta a est eu dictum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam sit amet nisl neque. Mauris cursus arcu eget faucibus fermentum. Nullam finibus neque vitae tortor pretium, nec viverra turpis congue. Duis cursus enim vel ornare porttitor. Proin condimentum arcu odio, ac blandit lacus semper at. Aliquam pulvinar justo quis suscipit ornare. Aliquam eu ex placerat, consectetur ligula sed, venenatis nisl. Duis eget neque in ligula efficitur volutpat. Vestibulum ac dui non eros viverra mattis id sit amet lectus. Nulla placerat, tortor et dapibus pharetra, ligula velit varius lorem, placerat fermentum eros odio non diam. Donec eu augue vitae lectus maximus tincidunt volutpat quis nisl. Donec dictum, arcu ut commodo imperdiet, nibh lorem elementum turpis, eu lacinia sapien ligula ac sapien. Ut bibendum, nibh ac faucibus tempor, dolor diam tristique ante, a vestibulum ligula enim sed justo. Donec condimentum, purus quis eleifend volutpat, erat metus tincidunt nunc, ut ultricies diam nibh et ex. Vivamus pellentesque dui in neque ultricies, in viverra ante rutrum. Ut rhoncus leo suscipit tincidunt scelerisque. Curabitur lacinia metus at blandit feugiat. Phasellus malesuada ultricies suscipit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla egestas tincidunt dictum. Etiam libero nulla, varius ut finibus eget, semper sed enim. Morbi sed tincidunt urna. Nunc faucibus nisi eu ligula tempus porttitor. Donec maximus leo nec est viverra, at iaculis felis tempus. Vivamus lacinia facilisis turpis, semper maximus neque rhoncus sit amet. Cras pharetra tellus scelerisque facilisis ullamcorper. Nullam id diam volutpat, dapibus ligula non, consequat massa. Fusce eget nunc commodo, elementum ipsum id, euismod metus. Fusce dictum, metus et vestibulum dapibus, dolor sapien semper dui, sed dapibus tortor velit venenatis ipsum. Nulla tempus nisl justo, vel mattis erat blandit vel.",
+  "limit": 5
+}

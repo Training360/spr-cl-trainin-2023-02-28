@@ -29,3 +29,11 @@ docker run -d -e POSTGRES_DB=employees -e POSTGRES_USER=employees -e POSTGRES_PA
 * Vagy Postman
 * Vagy Swagger 
 * Vagy Visual Studio Code, REST Client Extension telepítésével képes kezelni a `.http` fájlokat
+
+## course-service
+
+* `Service` osztály kiegészítése (entitás, repo is)
+
+```shell
+docker run -d -e POSTGRES_DB=course -e POSTGRES_USER=course -e POSTGRES_PASSWORD=course -p 5434:5432  --name course-postgres postgres
+```
