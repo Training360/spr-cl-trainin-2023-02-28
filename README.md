@@ -41,3 +41,11 @@ docker run -d -e POSTGRES_DB=course -e POSTGRES_USER=course -e POSTGRES_PASSWORD
 * `enroll()` metódus implementálása
 
 ## frontend-service indítása és kiegészítése
+
+* Kliens interfész használata REST webszolgáltatás híváshoz
+* API composition, MapStruct használatával
+* ConfigurationProperties bevezetése
+
+## bff-service - Backend for frontend GraphQL használatával
+
+* GraphQL bevezetése
