@@ -23,3 +23,9 @@ docker run -d -e POSTGRES_DB=employees -e POSTGRES_USER=employees -e POSTGRES_PA
 * JDK beállítása
 * Alkalmazás indítása az `Application` osztállyal
 * A Swagger elérhető a `http://localhost:8081/swagger-ui` címen
+
+## REST kliens
+
+* Vagy Postman
+* Vagy Swagger 
+* Vagy Visual Studio Code, REST Client Extension telepítésével képes kezelni a `.http` fájlokat
