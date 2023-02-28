@@ -1,0 +1,34 @@
+# List roles
+GET http://localhost:8081/api/roles
+Accept: application/json
+
+### Get role by id
+GET http://localhost:8081/api/roles/1
+Accept: application/json
+
+
+### Create role
+POST http://localhost:8081/api/roles
+Content-Type: application/json
+
+{
+  "name": "Junior Java developer"
+}
+
+
+### List employees 
+GET http://localhost:8081/api/employees
+Accept: application/json
+
+### Create employee
+
+POST http://localhost:8081/api/employees
+Content-Type: application/json
+
+{
+  "name": "John Doe",
+  "roleId": 1
+}
+
+### Delete employee
+DELETE http://localhost:8081/api/employees/9
