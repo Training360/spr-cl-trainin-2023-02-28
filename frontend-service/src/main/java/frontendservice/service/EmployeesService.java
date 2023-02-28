@@ -20,9 +20,11 @@ public class EmployeesService {
     }
 
     public List<Role> listRoles() {
-        return null;
+        return employeeClient.listRoles();
     }
 
-    public void createEmployee(CreateEmployeeCommand command) {        }
+    public void createEmployee(CreateEmployeeCommand command) {
+        employeeClient.createEmployee(command);
+    }
 
 }
