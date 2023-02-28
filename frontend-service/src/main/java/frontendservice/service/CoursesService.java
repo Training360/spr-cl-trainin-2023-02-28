@@ -28,9 +28,9 @@ public class CoursesService {
         // TODO Csak a megfelelő id-jú employee-k lekérdezése
         var employees = employeesService.listEmployees();
 
-        // TODO - API composition
+        // API composition
         // CourseDetails átkonvertálása CourseDetailsDto-ra, hogy Employee referenciákat tartalmazzon
 
-        return null;
+        return courseMapper.toDto(course, employees);
     }
 }
