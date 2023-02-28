@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Courses</title>
+</head>
+<body>
+
+<h1>Courses</h1>
+
+<p th:replace="~{fragments/menu.html :: p}"></p>
+
+<table>
+    <thead>
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="course : ${courses}">
+            <td th:text="${course.id}"></td>
+            <td th:text="${course.name}"></td>
+            <td>
+                <a th:href="@{/course(courseId=${course.id})}">Details</a>
+            </td>
+    </tr>
+    </tbody>
+</table>
+
+</body>
+</html>

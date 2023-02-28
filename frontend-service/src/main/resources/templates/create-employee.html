@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Employees</title>
+</head>
+<body>
+
+<h1>Create employee</h1>
+
+<p th:replace="~{fragments/menu.html :: p}"></p>
+
+<form th:action="@{/create-employee}" th:object="${command}" method="post">
+        <label for="name-input">Name</label>
+        <input th:field="*{name}" id="name-input" />
+    <select th:field="*{roleId}">
+        <option th:each="course : ${roles}" th:value="${course.id}" th:text="${course.name}"></option>
+    </select>
+    <button type="submit" class="btn btn-primary">Create employee</button>
+</form>
+
+</body>
+</html>

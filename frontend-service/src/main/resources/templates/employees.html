@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" >
+<head>
+    <meta charset="UTF-8"/>
+    <title>Employees</title>
+</head>
+<body>
+
+<h1>Employees</h1>
+
+<p th:replace="~{fragments/menu.html :: p}"></p>
+
+<table>
+    <thead>
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Role</th>
+        <th>Links</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="employee : ${employees}">
+            <td th:text="${employee.id}"></td>
+            <td th:text="${employee.name}"></td>
+            <td th:text="${employee.role.name}"></td>
+            <td>
+                <!-- <a th:href="@{/calendar-items(employeeId=${employee.id})}">Calendar</a> -->
+            </td>
+    </tr>
+    </tbody>
+</table>
+
+<a href="/create-employee">Create employee</a>
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Course</title>
+</head>
+<body>
+
+<h1>Course</h1>
+
+<p th:replace="~{fragments/menu.html :: p}"></p>
+
+<p th:text="${course.id}"></p>
+<p th:text="${course.name}"></p>
+<p th:text="${course.description}"></p>
+<p th:text="${course.syllabus}"></p>
+<p th:text="${course.limit}"></p>
+<p>
+    Enrolled:
+<ul>
+    <li th:each="employee : ${course.enrolledEmployees}" th:text="${employee.name}"></li>
+</ul>
+
+</p>
+<p>
+    Completed:
+<ul>
+    <li th:each="employee : ${course.completedEmployees}" th:text="${employee.name}"></li>
+</ul>
+</p>
+
+</body>
+</html>
