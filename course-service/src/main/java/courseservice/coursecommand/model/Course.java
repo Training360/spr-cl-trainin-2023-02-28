@@ -34,4 +34,28 @@ public class Course {
     @ElementCollection
     List<Long> completedEmployees;
 
+    public static Course announceCourse(CreateCourseCommand command) {
+        var course = new Course();
+        course.name = command.getName();
+        course.description = command.getDescription();
+        course.syllabus = command.getSyllabus();
+        course.limit = command.getLimit();
+
+        return course;
+    }
+
+    public boolean enroll(long employeeId) {
+        if (enrolledEmployees.contains(employeeId)) {
+            return true;
+        }
+        if (isFull()) {
+            return false;
+        }
+        enrolledEmployees.add(employeeId);
+        return true;
+    }
+
+    private boolean isFull() {
+        return enrolledEmployees.size() >= limit;
+    }
 }

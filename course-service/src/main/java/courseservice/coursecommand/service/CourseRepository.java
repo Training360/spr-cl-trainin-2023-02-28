@@ -11,5 +11,6 @@ import java.util.Optional;
 public interface CourseRepository extends JpaRepository<Course, Long> {
 
 
-
+    @Query("select new courseservice.coursecommand.dto.CourseView(c.id, c.name, c.limit) from Course c")
+    List<CourseView> findAllView();
 }
