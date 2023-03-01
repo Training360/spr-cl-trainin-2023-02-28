@@ -50,3 +50,11 @@ docker run -d -e POSTGRES_DB=course -e POSTGRES_USER=course -e POSTGRES_PASSWORD
 
 * GraphQL bevezetése
 * Grphiql kliens: `http://localhost:8088/graphiql`
+
+## Gateway
+
+## Caching
+
+```shell
+docker run --name employees-redis -p 6379:6379 -d redis
+```
