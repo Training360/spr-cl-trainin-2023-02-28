@@ -1,5 +1,16 @@
 # Spring Cloud tanfolyam
 
+## Felhasznált irodalom
+
+Chris Richardson: Microservices Patterns, https://microservices.io/patterns/microservices.html
+Vaughn Vernon: Domain-Driven Design Distilled
+
+## Ajánlott irodalom
+
+Microservices with Spring Boot and Spring Cloud: Build resilient and scalable microservices using Spring Cloud, Istio, and Kubernetes, 2nd Edition 2nd ed. Edition
+Building Microservices - Designing Fine-Grained Systems 2nd Edition
+Cloud Native Spring in Action
+
 ## Klónozás
 
 ```shell
