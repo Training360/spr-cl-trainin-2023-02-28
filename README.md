@@ -62,3 +62,11 @@ docker exec -it employees-redis redis-cli --scan
 docker exec -it employees-redis redis-cli get employee::1  
 docker exec -it employees-redis redis-cli get "employees::SimpleKey []"
 ```
+
+## Kafka
+
+Kafka és Kafdrop elindítása:
+
+```shell
+docker compose up -d
+```
