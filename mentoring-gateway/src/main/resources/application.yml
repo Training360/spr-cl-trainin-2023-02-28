@@ -3,6 +3,9 @@ server:
 spring:
   cloud:
     gateway:
+      filter:
+        local-response-cache:
+          enabled: true
       routes:
         - id: roles
           uri: http://localhost:8081/
@@ -12,6 +15,8 @@ spring:
           uri: http://localhost:8081/
           predicates:
             - Path=/api/employees
+          filters:
+            - LocalResponseCache=30m,500MB
         - id: courses
           uri: http://localhost:8083/
           predicates:
