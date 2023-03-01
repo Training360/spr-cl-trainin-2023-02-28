@@ -10,7 +10,7 @@ spring:
         - id: roles
           uri: http://localhost:8081/
           predicates:
-            - Path=/api/roles
+            - Path=/api/roles/**
           filters:
             - name: CircuitBreaker
               args:
@@ -19,9 +19,9 @@ spring:
         - id: employees
           uri: http://localhost:8081/
           predicates:
-            - Path=/api/employees
+            - Path=/api/employees/**
           filters:
-            - LocalResponseCache=30m,500MB
+#            - LocalResponseCache=30m,500MB
             - name: CircuitBreaker
               args:
                 name: employeesCircuitBreaker
@@ -29,4 +29,4 @@ spring:
         - id: courses
           uri: http://localhost:8083/
           predicates:
-            - Path=/api/courses
+            - Path=/api/courses/**
