@@ -1,6 +1,7 @@
 ### GraphQL
 POST http://localhost:8088/graphql
-X-Request-Type: GraphQL
+Content-Type: application/json
+X-REQUEST-TYPE: GraphQL
 
 query {
     courses {
