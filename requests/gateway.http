@@ -7,6 +7,9 @@ GET http://localhost:8085/api/employees
 ### Courses
 GET http://localhost:8085/api/courses
 
+### Courses
+GET http://localhost:8085/api/courses/1
+
 ### Roles
 GET http://localhost:8085/dummy/api/roles
 
