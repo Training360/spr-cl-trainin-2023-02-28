@@ -4,7 +4,15 @@ spring:
   cloud:
     gateway:
       routes:
+        - id: roles
+          uri: http://localhost:8081/
+          predicates:
+            - Path=/api/roles
         - id: employees
           uri: http://localhost:8081/
           predicates:
             - Path=/api/employees
+        - id: courses
+          uri: http://localhost:8083/
+          predicates:
+            - Path=/api/courses
