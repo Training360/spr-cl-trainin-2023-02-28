@@ -21,7 +21,7 @@ public class CourseCommandHandler {
         return command -> {
             log.debug("Message has come: {}", command);
             var success = courseService.enroll(new EnrollCommand(command.getCourseId(), command.getEmployeeId()));
-            return new EnrollCourseReply(success);
+            return new EnrollCourseReply(command.getCourseId(), command.getEmployeeId(), success);
         };
     }
 }

@@ -3,6 +3,7 @@ package careerservice.enrollment.saga;
 import careerservice.enrollment.model.EnrollCommand;
 import careerservice.enrollment.service.EnrollmentService;
 import careerservice.enrollment.view.EnrollmentView;
+import careerservice.kafkagateway.EnrollCourseReply;
 import lombok.AllArgsConstructor;
 import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.stereotype.Service;
@@ -22,4 +23,12 @@ public class EnrollSaga {
         return view;
     }
 
+    public void register(EnrollCourseReply reply) {
+        if (reply.isSuccess()) {
+            enrollmentService.registered(reply.getCourseId(), reply.getEmployeeId());
+        }
+        else {
+            enrollmentService.reject(reply.getCourseId(), reply.getEmployeeId());
+        }
+    }
 }

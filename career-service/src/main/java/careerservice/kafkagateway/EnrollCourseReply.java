@@ -1,4 +1,4 @@
-package courseservice.kafkagateway;
+package careerservice.kafkagateway;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
