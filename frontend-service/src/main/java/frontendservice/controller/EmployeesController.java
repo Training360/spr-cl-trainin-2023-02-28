@@ -28,7 +28,11 @@ public class EmployeesController {
     }
 
     @GetMapping("/create-employee")
-    public ModelAndView createEmployee() {
+    public ModelAndView createEmployee(Principal principal) {
+        if (principal != null) {
+            log.debug("Logger in user: {}", principal.getName());
+        }
+
         var model = Map.of(
                 "command", new CreateEmployeeCommand(),
                 "roles", employeesService.listRoles()

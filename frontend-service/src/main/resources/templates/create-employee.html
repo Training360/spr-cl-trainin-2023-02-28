@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity6">
 <head>
     <meta charset="UTF-8"/>
     <title>Employees</title>
@@ -9,6 +9,8 @@
 <h1>Create employee</h1>
 
 <p th:replace="~{fragments/menu.html :: p}"></p>
+
+Username: <span sec:authentication="name">username</span>
 
 <form th:action="@{/create-employee}" th:object="${command}" method="post">
         <label for="name-input">Name</label>
