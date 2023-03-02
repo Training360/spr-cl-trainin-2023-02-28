@@ -104,3 +104,9 @@ Keycloak elérés: `http://localhost:8089/`
 
 
 Client Scopes/roles/Mappers/realm roles/Add to ID token
+
+## Zipkin indítása
+
+```shell
+docker run -d -p 9411:9411 --name zipkin openzipkin/zipkin
+```
