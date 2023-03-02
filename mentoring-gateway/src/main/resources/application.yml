@@ -30,3 +30,12 @@ spring:
           uri: http://localhost:8083/
           predicates:
             - Path=/api/courses/**
+  zipkin:
+    baseUrl: http://localhost:9411
+  application:
+    name: mentoring-gateway
+
+management:
+  tracing:
+    sampling:
+      probability: 1.0
