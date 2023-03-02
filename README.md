@@ -87,3 +87,10 @@ docker compose up -d
 ```shell
 docker run -d -e POSTGRES_DB=career -e POSTGRES_USER=career -e POSTGRES_PASSWORD=career -p 5435:5432  --name career-postgres postgres
 ```
+## Keycloak indítása
+
+```shell
+docker run -d -e KEYCLOAK_USER=root -e KEYCLOAK_PASSWORD=root -p 8089:8080 --name keycloak jboss/keycloak
+```
+
+Keycloak elérés: `http://localhost:8089/`
