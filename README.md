@@ -110,3 +110,9 @@ Client Scopes/roles/Mappers/realm roles/Add to ID token
 ```shell
 docker run -d -p 9411:9411 --name zipkin openzipkin/zipkin
 ```
+
+## EFK stack elindítása
+
+```shell
+docker compose up -d
+```
