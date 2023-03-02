@@ -94,3 +94,5 @@ docker run -d -e KEYCLOAK_USER=root -e KEYCLOAK_PASSWORD=root -p 8089:8080 --nam
 ```
 
 Keycloak elérés: `http://localhost:8089/`
+
+Client Scopes/roles/Mappers/realm roles/Add to ID token
