@@ -1,0 +1,28 @@
+syntax = "proto3";
+option java_multiple_files = true;
+package ratingservice.grpcgateway;
+import "google/protobuf/wrappers.proto";
+
+message RateRequest {
+    int64 employeeId = 1;
+    int64 courseId = 2;
+    int32 stars = 3;
+}
+
+message RateResponse {
+    int64 id = 1;
+    int64 employeeId = 2;
+    int64 courseId = 3;
+    int32 stars = 4;
+}
+
+message RatingAverage {
+    int64 courseId = 3;
+    double stars = 4;
+    int32 numberOfRates = 5;
+}
+
+service RatingService {
+    rpc createRating(RateRequest) returns (RateResponse);
+    rpc findAverageByCourseId(google.protobuf.Int64Value) returns (RatingAverage);
+}
