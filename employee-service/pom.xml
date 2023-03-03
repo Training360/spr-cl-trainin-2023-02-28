@@ -86,54 +86,54 @@
 <!--			<artifactId>spring-boot-starter-data-redis</artifactId>-->
 <!--		</dependency>-->
 
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-oauth2-resource-server</artifactId>
-		</dependency>
+<!--		<dependency>-->
+<!--			<groupId>org.springframework.boot</groupId>-->
+<!--			<artifactId>spring-boot-starter-oauth2-resource-server</artifactId>-->
+<!--		</dependency>-->
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-actuator</artifactId>
 		</dependency>
 
-		<dependency>
-			<groupId>io.micrometer</groupId>
-			<artifactId>micrometer-tracing-bridge-otel</artifactId>
-		</dependency>
+<!--		<dependency>-->
+<!--			<groupId>io.micrometer</groupId>-->
+<!--			<artifactId>micrometer-tracing-bridge-otel</artifactId>-->
+<!--		</dependency>-->
 
-		<dependency>
-			<groupId>io.opentelemetry</groupId>
-			<artifactId>opentelemetry-exporter-zipkin</artifactId>
-		</dependency>
+<!--		<dependency>-->
+<!--			<groupId>io.opentelemetry</groupId>-->
+<!--			<artifactId>opentelemetry-exporter-zipkin</artifactId>-->
+<!--		</dependency>-->
 
 
-		<dependency>
-			<groupId>net.ttddyy.observation</groupId>
-			<artifactId>datasource-micrometer-spring-boot</artifactId>
-			<version>1.0.1</version>
-		</dependency>
+<!--		<dependency>-->
+<!--			<groupId>net.ttddyy.observation</groupId>-->
+<!--			<artifactId>datasource-micrometer-spring-boot</artifactId>-->
+<!--			<version>1.0.1</version>-->
+<!--		</dependency>-->
 
-		<dependency>
-			<groupId>com.sndyuk</groupId>
-			<artifactId>logback-more-appenders</artifactId>
-			<version>1.8.7</version>
-		</dependency>
+<!--		<dependency>-->
+<!--			<groupId>com.sndyuk</groupId>-->
+<!--			<artifactId>logback-more-appenders</artifactId>-->
+<!--			<version>1.8.7</version>-->
+<!--		</dependency>-->
 
-		<dependency>
-			<groupId>org.fluentd</groupId>
-			<artifactId>fluent-logger</artifactId>
-			<version>0.3.4</version>
-		</dependency>
+<!--		<dependency>-->
+<!--			<groupId>org.fluentd</groupId>-->
+<!--			<artifactId>fluent-logger</artifactId>-->
+<!--			<version>0.3.4</version>-->
+<!--		</dependency>-->
 
-				<dependency>
-					<groupId>org.springframework.cloud</groupId>
-					<artifactId>spring-cloud-config-client</artifactId>
-				</dependency>
+<!--				<dependency>-->
+<!--					<groupId>org.springframework.cloud</groupId>-->
+<!--					<artifactId>spring-cloud-config-client</artifactId>-->
+<!--				</dependency>-->
 
-		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-bus-kafka</artifactId>
-		</dependency>
+<!--		<dependency>-->
+<!--			<groupId>org.springframework.cloud</groupId>-->
+<!--			<artifactId>spring-cloud-starter-bus-kafka</artifactId>-->
+<!--		</dependency>-->
 
 	</dependencies>
 

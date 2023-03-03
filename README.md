@@ -132,3 +132,27 @@ logging.level.employeeservice=info
 ```
 
 Fontos, hogy érvényes Git repo legyen.
+
+## Kubernetes deployment
+
+```shell
+cd deployment
+kubectl apply -f employees-postgres-secret.yaml
+kubectl get secrets
+kubectl apply -f employee-postgres-deployment.yaml
+kubectl get deployments
+kubectl get pods
+kubectl logs -f employees-postgres-55486576cb-5jb7q
+```
+
+Image létrehozása előtt Maven clean package!
+
+Létrehoztuk a `Dockerfile` fájlt.
+
+```shell
+cd employee-service
+docker build -t employee-service:0.0.1 .
+kubectl apply -f employee-deployment.yaml
+kubectl logs -f employee-service-5b54ddd747-vc7h9
+kubectl port-forward service/employee-service 9901:8080
+```
