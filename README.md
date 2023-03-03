@@ -117,8 +117,18 @@ docker run -d -p 9411:9411 --name zipkin openzipkin/zipkin
 docker compose up -d
 ```
 
-##
-
 ```
 docker compose logs fluentd-efd -f
 ```
+
+## Config server
+
+Repo a `C:\tmp\mentoring-app-config` útvonalon, és ott egy `employee-service.properties`
+állomány, tartalma:
+
+```properties
+logging.level.org.hibernate.SQL=info
+logging.level.employeeservice=info
+```
+
+Fontos, hogy érvényes Git repo legyen.

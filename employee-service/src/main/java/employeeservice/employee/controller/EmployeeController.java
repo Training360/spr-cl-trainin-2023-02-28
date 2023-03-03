@@ -8,6 +8,7 @@ import io.swagger.v3.oas.annotations.Operation;
 import lombok.AllArgsConstructor;
 import lombok.SneakyThrows;
 import lombok.extern.slf4j.Slf4j;
+import org.slf4j.MDC;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
@@ -39,6 +40,7 @@ public class EmployeeController {
 //        }
 
         log.debug("Headers: {}", headers);
+        MDC.put("username", "dummy");
         return employeeService.listEmployees();
     }
 
