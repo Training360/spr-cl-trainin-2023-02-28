@@ -10,6 +10,7 @@ Vaughn Vernon: Domain-Driven Design Distilled
 Microservices with Spring Boot and Spring Cloud: Build resilient and scalable microservices using Spring Cloud, Istio, and Kubernetes, 2nd Edition 2nd ed. Edition
 Building Microservices - Designing Fine-Grained Systems 2nd Edition
 Cloud Native Spring in Action
+[Release It!: Design and Deploy Production-Ready Software (Pragmatic Programmers)](https://www.amazon.com/Release-Design-Deploy-Production-Ready-Software/dp/1680502395/ref=sr_1_15?keywords=continuous+delivery&qid=1677850778&s=books&sprefix=conti%2Cstripbooks-intl-ship%2C181&sr=1-15)
 
 ## Klónozás
 
@@ -155,4 +156,10 @@ docker build -t employee-service:0.0.1 .
 kubectl apply -f employee-deployment.yaml
 kubectl logs -f employee-service-5b54ddd747-vc7h9
 kubectl port-forward service/employee-service 9901:8080
+```
+
+# GitLab regiszter runner
+
+```
+docker exec -it gitlab-gitlab-runner-1 gitlab-runner register --non-interactive --url http://gitlab-gitlab-1 --registration-token pqLP-LzQHnUoe9Hs-1mw --executor docker --docker-image docker:latest --docker-network-mode gitlab_default --clone-url http://gitlab-gitlab-1 --docker-volumes /var/run/docker.sock:/var/run/docker.sock
 ```
