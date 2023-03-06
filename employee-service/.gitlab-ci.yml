@@ -1,0 +1,18 @@
+variables:
+   MAVEN_OPTS: "-Dmaven.repo.local=$CI_PROJECT_DIR/.m2/repository"
+
+cache:
+  paths:
+    - .m2/repository
+
+stages:
+  - build
+
+build-job:
+  stage: build
+  image: openjdk:17
+  script:
+    - ./mvnw package
+  artifacts:
+    paths:
+      - target/*.jar
